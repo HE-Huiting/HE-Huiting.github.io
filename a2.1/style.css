@@ -1,0 +1,409 @@
+body{
+    background-color: rgb(3, 33, 141);
+    color: aqua;
+    text-align: center;
+    text-shadow: 4px 4px 8px #fa0bb7;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{ display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px 30px;
+    grid-template-columns: auto;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-areas:
+     ". . . . ."
+     ". . . . ."
+     ". . . . ."
+     ". . . . ."
+     ". . . . ."
+     ". . . . .";
+}
+
+html, body, .container{
+    height: 100%;
+    margin: 0;
+}
+
+.box{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 310px;
+    grid-row: 1/5;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box2{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 30px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box3{
+    background:radial-gradient(circle at right top, transparent 0%, #ffa500 80% )right top ;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    left: -250px;
+}
+
+.box4{
+    background:radial-gradient(circle at left top, transparent 0%, #ffa500 80%) ;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    left: -250px;
+}
+
+.box5{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    right: 530px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box6{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -280px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box7{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 30px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box8{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -250px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box9{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    right: 530px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box10{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    right: 280px;
+    top: px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box11{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    right: 280px;
+    top: px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box12{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -560px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box13{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -840px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box14{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 960px;
+    top: -310px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box15{
+    background:radial-gradient(circle at left bottom, transparent 0%, #ffa500 80%)left bottom ;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    left: -590px;
+    top: -280px;
+}
+
+.box16{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -870px;
+    top: 0px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box17{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -1150px;
+    top: 0px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box18{
+    background:radial-gradient(circle at right bottom, transparent 0%, #ffa500 0%)right bottom ;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    left: 960px;
+    top: -590px;
+}
+
+.box19{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 960px;
+    top: -310px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box20{
+    background:radial-gradient(circle at left top, transparent 0%, #ffa500 80%) ;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    left: -590px;
+}
+
+.box21{
+    background:radial-gradient(circle at right top, transparent 0%, #ffa500 0%)right top ;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    left: -1150px;
+}
+
+.box22{
+    background:radial-gradient(circle at left top, transparent 0%, #ffa500 0%) ;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    left: -1150px;
+}
+
+.box23{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 1240px;
+    top: -310px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box24{
+    background-color:#ffa500;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 960px;
+    top: -310px;
+    border-radius: 0px 0px 100px 0px;
+}
+
+.box25{
+    background-color: #ffa500;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -280px;
+    top: -0px;
+    border-radius: 0px 0px 0px 100px;
+}
+
+.box26{
+    background:radial-gradient(circle at left bottom, transparent 0%, aqua 0%)left bottom ;
+    border-radius: 0%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 560px;
+    height: 560px;
+    position: relative;
+    left: -1180px;
+    top: -280px;
+}
+
+.box27{
+    background-color: #ffa500;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -1150px;
+    top: -0px;
+    border-radius:0px 0px 100px 0px ;
+}
+
+.box28{
+    background-color: #ffa500;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 1240px;
+    top: -570px;
+    border-radius: 100px 0px 0px 0px;
+}
+
+.box29{
+    background:radial-gradient(circle at left bottom, transparent 0%, #ffa500 0%)left bottom ;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 960px;
+    top: -570px;
+    border-radius: 0px 100px 0px 0px;
+}
+
+.box30{
+    background-color: #ffa500;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -590px;
+    top: -260px;
+    border-radius:0px 0px 0px 100px ;
+}
+
+.box31{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: -870px;
+    top: -260px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box33{
+    background-color: aqua;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 935px;
+    top: -555px;
+    border-style: solid;
+    border-color: #fa0bb7;
+    border-width: 3px;
+}
+
+.box34{
+    background-color: #ffa500;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 650px;
+    top: -555px;
+    border-radius:0px 0px 100px 0px ;
+}
+
+.box35{
+    background-color: #ffa500;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 645px;
+    top: -555px;
+    border-radius:0px 0px 0px 100px ;
+}
+/*  I use background color, color, font size, font family and text alignment to create a relatively uniform design throughout the site, but with partially different colors and elements that don't look too monotonous.
+I also use text shadows, background and border attributes to create a rich and interesting visual effect. */
