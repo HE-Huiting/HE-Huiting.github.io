@@ -1,0 +1,145 @@
+/* z-index order */
+/*  */
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#e8c8df;
+  --col-02:#7fc1ff;
+  --col-03:#064d8f;
+  --col-04:#b6e878;
+  --col-05:aqua;
+}
+
+/* Large, high-contrast, intuitive headlines */
+h1{
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-03);
+  padding: 10vw;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 50px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.FilterSection{
+
+}
+
+.FilterBox{
+font-size: 40px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: var(--col-03);
+}
+
+/* The font size changes and the color changes when the mouse hovers, providing visual feedback to instruct the user. */
+.FilterBox :hover{
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--col-02);
+}
+
+a{
+color: black;
+}
+
+a:hover{
+  color: var(--col-05);
+}
+
+.FilterButton{
+background-color: var(--col-01);
+}
+
+.SelectedFilter{
+
+}
+
+.RecipeLink{
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.RecipeName{
+
+}
+
+.Author{
+
+}
+
+.RecipeImageContainer{
+}
+
+.RecipeImg{
+ 
+}
+
+.Attribution{
+
+}
+
+.Publisher{
+
+}
+
+.Cuisine{
+
+}
+
+.TimeToCook{
+
+}
+
+.SkillLevel{
+
+}
+
+.Course{
+
+}
+
+.Servings{
+
+}
+
+.Dietary{
+
+}
+
+.DatePublished{
+
+}
+
+.DateUpdated{
+
+}
+
+.SpecialEquipment{
+
+}
+
