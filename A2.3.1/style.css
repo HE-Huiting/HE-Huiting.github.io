@@ -1,0 +1,209 @@
+/*
+  This one CSS file is imported into both index.html AND hosono.html so you need to be careful that it 
+  works for both.
+*/
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+:root{
+  /* The colour palette is harmonious and the colours used make the text easy to read. */
+  --col-01:#000000d2;/*font*/
+  --col-02:hsl(204, 98%, 80%);/*background*/
+  --col-03:#f7abf3;/*button*/
+  --col-04:#74bff5;/*button*/
+  font-size: 16px;
+  /* scroll behaviour makes the <a> links to ids scroll to position over time rather than immediately */
+  scroll-behavior: smooth;
+}
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+}
+
+a{
+  color: #0199ff;
+}
+
+i{
+  color: #0199ff;
+}
+nav {
+  margin-top: 1rem;
+}
+
+nav li{
+  font-size: 1rem;
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+li{
+  font-size: 1rem;
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+#mode-button{
+  cursor: pointer;
+  background: linear-gradient(#f7abf3,#74bff5);
+  border: #7e92b4 3px solid;
+  border-radius: 10%;
+  font-family: fantasy;
+  font-size: 40px;
+  padding: 5px 10px;
+  margin: 10px;
+  float: right;
+  transition: color 0.5s;
+  
+  /* note the use of position: sticky to keep the button on the page even with scrolling */
+  position: sticky;
+  top: 1rem;
+}
+
+#mode-button:hover{
+  z-index: 1;
+  font-size: 50px;
+  box-shadow: #000000 15px 15px 20px ;
+  transition: font-size 1s 0.1s;
+}
+
+/* code for loading page */
+
+#load-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* changing button to look like a link */
+#load-link{
+  width: 150px;
+  line-height: 1rem;
+  background-color: #74bff5;
+  border: 25%;
+  border-color: #ffa8a8;
+  border-radius: 25px;
+  transition-property: line-height width background-color font-style;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0.05s;
+}
+
+#load-link:hover{
+  line-height: 2rem;
+  width: 250px;
+  background: linear-gradient(#f7abf3,#74bff5)
+}
+/* throbber while page is fake loading */
+#load-throbber{
+  /* the width, height and background-color give it a shape on the page without any content inside - 
+  these value are arbitrary, please change to create your own design  */
+  width: 80px;
+  height: 1rem;
+  background-color: var(--col-0);
+  /* we also initially set display to none so it only shows once the link is clicked */
+  display: none;
+  position: relative;
+  animation-name: a;
+  animation-duration: 9s;
+  animation-iteration-count: 1;
+}
+
+@keyframes a{
+  0%   {background-color:#74bff5; left:0px; top:0px;}
+  20%  {background-color:rgb(138, 248, 224); left:350px; top:0px;}
+  40%  {background-color:rgb(241, 241, 161); left:350px; top:-130px;}
+  60%  {background-color:rgb(245, 146, 182); left:-350px; top:-130px;}
+  80%  {background-color:rgb(225, 100, 253); left:-350px; top:0px;}
+  100% {background-color:rgb(127, 139, 246); left:0px; top:0px;}
+}
+/*The animation I chose was designed to rotate around the font. The gradient background colour of the button box and the colour gradient effect when the animation runs makes the animation look more vivid. The colour selection is also based on the background colour selection.*/
+/* Media Queries */
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+
+}
+
+@media (prefers-reduced-motion) {
+  :root{
+    scroll-behavior: auto;
+  }
+}
