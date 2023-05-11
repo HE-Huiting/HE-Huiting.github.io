@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Media Player Experiment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="playerControls.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <video id="video" width="100%" height="100%" poster="e4.1.jpg" style="background: #000;clear:both;display:block;margin:auto">
+          <source src="e4.MP4" type="video/mp4">
+      </video>
+
+      <div id="buttons">
+        
+          <div id="play" class="button">
+            <img id="playPause" src="./icons/play.svg" alt="">
+          </div>
+
+          <div id="forward" class="button">
+            <img src="./icons/fastForward.svg" alt="">
+          </div>
+
+          <div id="rewind" class="button">
+            <img src="./icons/rewind.svg" alt="">
+          </div>
+
+          <div id="full" class="button">
+            <img src="./icons/fullScreen.svg" alt="">
+          </div>
+
+          <span>Progress</span>
+
+          <progress value="0" id="progress">
+          </progress>
+
+          <div id="unmute" class="button">
+            <img id="unmute&mute" src="./icons/unmute.svg" alt="">
+          </div>
+
+          <span >Volume</span>
+
+          <input type="range" id="ran" value="50" min="0" max="100" onchange="setVolume()"/>
+          
+      </div>
+   
+    </div>
+  
+  </body>
+
+  </html>
+
